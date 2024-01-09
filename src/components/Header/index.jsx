@@ -10,14 +10,14 @@ function Header() {
                 <Li isActive={pathname === '/'}>
                     <Link to='/'>Início</Link>
                 </Li>
-                <Li>
-                    Projetos
+                <Li isActive={pathname.includes('projetos')}>
+                    <Link to='/projetos'>Projetos</Link>
                 </Li>
-                <Li>
-                    Contato
+                <Li isActive={pathname.includes('contato')}>
+                    <Link to='/contato'>Contato</Link>
                 </Li>
-                <Li>
-                    Sobre Mim
+                <Li isActive={pathname.includes('sobre-mim')}>
+                    <Link to='/sobre-mim'>Sobre Mim</Link>
                 </Li>
             </Menu>
         </div>

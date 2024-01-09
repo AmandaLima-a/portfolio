@@ -16,5 +16,6 @@ export const Li = styled.li`
     
     a {
         text-decoration: none;
+        color: white;
     }
 `
