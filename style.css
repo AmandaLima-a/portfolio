@@ -2,7 +2,7 @@
                     01 - RESET
 ==================================================*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +12,7 @@
                     02 - HTML
 ==================================================*/
 
-html{
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
@@ -21,7 +21,7 @@ html{
                     03 - ROOT
 ==================================================*/
 
-:root{
+:root {
     /* Cores */
     --cor-fundo: #18181B;
     --cor-superficie: #27272A;
@@ -54,10 +54,10 @@ html{
                     04 - BODY
 ==================================================*/
 
-body{
+body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
-    
+
     font-family: var(--fonte-texto);
 
     line-height: 1.6;
@@ -68,7 +68,7 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     font-family: var(--fonte-titulo);
 }
 
@@ -76,7 +76,7 @@ h6{
                     05 - LINKS
 ==================================================*/
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
@@ -85,7 +85,7 @@ a{
                     06 - CONTAINER
 ==================================================*/
 
-.container{
+.container {
     width: 100%;
     max-width: var(--largura-container);
     margin: 0 auto;
@@ -96,7 +96,7 @@ a{
                     07 - LISTAS
 ==================================================*/
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -104,7 +104,7 @@ ul{
                     08 - HEADER
 ==================================================*/
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -118,7 +118,7 @@ header{
     z-index: 1000;
 }
 
-header .container{
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,7 +128,7 @@ header .container{
                     09 - LOGO
 ==================================================*/
 
-.logo{
+.logo {
     font-size: 2.8rem;
     font-weight: 700;
     letter-spacing: .1rem;
@@ -138,7 +138,7 @@ header .container{
     transition: var(--transicao-padrao);
 }
 
-.logo:hover{
+.logo:hover {
     color: var(--cor-texto);
 }
 
@@ -146,12 +146,12 @@ header .container{
                     10 - MENU
 ==================================================*/
 
-nav{
+nav {
     display: flex;
     gap: 3rem;
 }
 
-nav a{
+nav a {
     font-size: 1.6rem;
     font-weight: 500;
 
@@ -160,7 +160,7 @@ nav a{
     transition: var(--transicao-padrao);
 }
 
-nav a::after{
+nav a::after {
     content: "";
 
     position: absolute;
@@ -176,11 +176,11 @@ nav a::after{
     transition: var(--transicao-padrao);
 }
 
-nav a:hover::after{
+nav a:hover::after {
     width: 100%;
 }
 
-nav a:hover{
+nav a:hover {
     color: var(--cor-primaria);
 }
 
@@ -188,7 +188,7 @@ nav a:hover{
                 11 - MENU TOGGLE
 ==================================================*/
 
-.menu_toggle{
+.menu_toggle {
     display: none;
 
     width: 2.6rem;
@@ -206,7 +206,7 @@ nav a:hover{
     top: -.3rem;
 }
 
-.menu_toggle span{
+.menu_toggle span {
     width: 90%;
     height: .25rem;
 
@@ -217,15 +217,15 @@ nav a:hover{
     transition: var(--transicao-padrao);
 }
 
-.menu_toggle.active span:nth-child(1){
+.menu_toggle.active span:nth-child(1) {
     transform: translateY(.85rem) rotate(45deg);
 }
 
-.menu_toggle.active span:nth-child(2){
+.menu_toggle.active span:nth-child(2) {
     opacity: 0;
 }
 
-.menu_toggle.active span:nth-child(3){
+.menu_toggle.active span:nth-child(3) {
     transform: translateY(-.85rem) rotate(-45deg);
 }
 
@@ -233,7 +233,7 @@ nav a:hover{
                     12 - HERO
 ==================================================*/
 
-#hero{
+#hero {
     min-height: 100vh;
 
     display: flex;
@@ -242,7 +242,7 @@ nav a:hover{
     padding-top: 10rem;
 }
 
-#hero .container{
+#hero .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -253,11 +253,11 @@ nav a:hover{
                 13 - HERO CONTENT
 ==================================================*/
 
-.hero_content{
+.hero_content {
     max-width: 60rem;
 }
 
-.hero_badge{
+.hero_badge {
     display: inline-flex;
     align-items: center;
     gap: 1.2rem;
@@ -270,7 +270,7 @@ nav a:hover{
     font-weight: 600;
 }
 
-.hero_badge::before{
+.hero_badge::before {
     content: "";
 
     width: 4rem;
@@ -281,7 +281,7 @@ nav a:hover{
     border-radius: 999px;
 }
 
-.hero_content h1{
+.hero_content h1 {
     margin-bottom: 1.2rem;
 
     font-size: 6.4rem;
@@ -289,7 +289,7 @@ nav a:hover{
     line-height: 1.1;
 }
 
-.hero_content h2{
+.hero_content h2 {
     margin-bottom: 2.4rem;
 
     color: var(--cor-texto-secundario);
@@ -298,11 +298,11 @@ nav a:hover{
     font-weight: 600;
 }
 
-.hero_content h2 span{
+.hero_content h2 span {
     color: var(--cor-primaria);
 }
 
-.hero_content p{
+.hero_content p {
     max-width: 46rem;
 
     color: var(--cor-texto-secundario);
@@ -315,14 +315,14 @@ nav a:hover{
                 14 - BOTÕES
 ==================================================*/
 
-.hero_buttons{
+.hero_buttons {
     display: flex;
     gap: 2rem;
 
     margin-top: 4rem;
 }
 
-.btn{
+.btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -342,31 +342,31 @@ nav a:hover{
     min-width: 16rem;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: var(--cor-primaria);
     color: var(--cor-texto);
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: var(--cor-primaria-hover);
 
     transform: translateY(-.3rem);
 }
 
-.btn-secondary{
+.btn-secondary {
     border-color: var(--cor-primaria);
 
     color: var(--cor-texto);
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     background-color: var(--cor-primaria);
 
     transform: translateY(-.3rem);
 }
 
 .btn:focus-visible,
-nav a:focus-visible{
+nav a:focus-visible {
     outline: .2rem solid var(--cor-primaria);
     outline-offset: .4rem;
 }
@@ -375,7 +375,7 @@ nav a:focus-visible{
                 15 - HERO IMAGE
 ==================================================*/
 
-.hero_image{
+.hero_image {
     flex: 1;
 
     display: flex;
@@ -386,7 +386,7 @@ nav a:focus-visible{
     animation: float 4s ease-in-out infinite;
 }
 
-.hero_image img{
+.hero_image img {
     width: 100%;
     max-width: 42rem;
 
@@ -400,11 +400,11 @@ nav a:focus-visible{
     transition: transform .3s ease;
 }
 
-.hero_image:hover img{
+.hero_image:hover img {
     transform: scale(1.03);
 }
 
-.hero_image::before{
+.hero_image::before {
     content: "";
 
     position: absolute;
@@ -435,11 +435,11 @@ nav a:focus-visible{
 @keyframes float {
 
     0%,
-    100%{
+    100% {
         transform: translateY(0);
     }
 
-    50%{
+    50% {
         transform: translateY(-1rem);
     }
 
@@ -450,11 +450,11 @@ nav a:focus-visible{
                 17 - SOBRE
 ==================================================*/
 
-#sobre{
+#sobre {
     padding: 10rem 0;
 }
 
-.section_header{
+.section_header {
     max-width: 70rem;
 
     margin: 0 auto 6rem;
@@ -462,7 +462,7 @@ nav a:focus-visible{
     text-align: center;
 }
 
-.section_badge{
+.section_badge {
     display: inline-block;
 
     margin-bottom: 1.2rem;
@@ -475,7 +475,7 @@ nav a:focus-visible{
     letter-spacing: .1rem;
 }
 
-.section_header h2{
+.section_header h2 {
     margin-bottom: 1.6rem;
 
     font-size: 4rem;
@@ -483,7 +483,7 @@ nav a:focus-visible{
     line-height: 1.2;
 }
 
-.section_header p{
+.section_header p {
     color: var(--cor-texto-secundario);
 
     font-size: 1.7rem;
@@ -492,7 +492,7 @@ nav a:focus-visible{
 
 /*--------------- 17.1 - SOBRE CONTENT ---------------*/
 
-.sobre_content{
+.sobre_content {
     display: grid;
 
     grid-template-columns: 1.2fr .8fr;
@@ -502,14 +502,14 @@ nav a:focus-visible{
     align-items: center;
 }
 
-.sobre_texto h3{
+.sobre_texto h3 {
     margin-bottom: 2rem;
 
     font-size: 2.8rem;
     font-weight: 700;
 }
 
-.sobre_texto p{
+.sobre_texto p {
     margin-bottom: 1.8rem;
 
     color: var(--cor-texto-secundario);
@@ -518,18 +518,18 @@ nav a:focus-visible{
     line-height: 1.8;
 }
 
-.sobre_texto p:last-child{
+.sobre_texto p:last-child {
     margin-bottom: 0;
 }
 
-.sobre_destaques{
+.sobre_destaques {
     display: flex;
     flex-direction: column;
 
     gap: 2rem;
 }
 
-.destaque{
+.destaque {
     padding: 2.4rem;
 
     background-color: var(--cor-superficie);
@@ -540,13 +540,13 @@ nav a:focus-visible{
     transition: var(--transicao-padrao);
 }
 
-.destaque:hover{
+.destaque:hover {
     border-color: var(--cor-primaria);
 
     transform: translateX(.5rem);
 }
 
-.destaque strong{
+.destaque strong {
     display: block;
 
     margin-bottom: .8rem;
@@ -557,7 +557,7 @@ nav a:focus-visible{
     font-size: 1.8rem;
 }
 
-.destaque span{
+.destaque span {
     color: var(--cor-texto-secundario);
 
     font-size: 1.5rem;
@@ -568,11 +568,11 @@ nav a:focus-visible{
                 18 - TECNOLOGIAS
 ==================================================*/
 
-#tecnologias{
+#tecnologias {
     padding: 10rem 0;
 }
 
-.tecnologias_grid{
+.tecnologias_grid {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
@@ -580,7 +580,7 @@ nav a:focus-visible{
     gap: 2rem;
 }
 
-.tecnologia_card{
+.tecnologia_card {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -595,7 +595,7 @@ nav a:focus-visible{
     transition: var(--transicao-padrao);
 }
 
-.tecnologia_card:hover{
+.tecnologia_card:hover {
     border-color: var(--cor-primaria);
 
     transform: translateY(-.4rem);
@@ -603,7 +603,7 @@ nav a:focus-visible{
     box-shadow: 0 1rem 3rem var(--cor-sombra);
 }
 
-.tecnologia_icon{
+.tecnologia_icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -622,18 +622,18 @@ nav a:focus-visible{
     box-shadow: 0 0 2rem var(--cor-primaria-brilho);
 }
 
-.tecnologia_info{
+.tecnologia_info {
     flex: 1;
 }
 
-.tecnologia_info h3{
+.tecnologia_info h3 {
     margin-bottom: .6rem;
 
     font-size: 1.8rem;
     font-weight: 700;
 }
 
-.tecnologia_info p{
+.tecnologia_info p {
     color: var(--cor-texto-secundario);
 
     font-size: 1.5rem;
@@ -644,18 +644,18 @@ nav a:focus-visible{
                 19 - PROJETOS
 ==================================================*/
 
-#projetos{
+#projetos {
     padding: 10rem 0;
 }
 
-.projetos_grid{
+.projetos_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
     gap: 2.4rem;
 }
 
-.projeto_card{
+.projeto_card {
     background-color: var(--cor-superficie);
 
     border: .1rem solid var(--cor-borda);
@@ -669,20 +669,20 @@ nav a:focus-visible{
     transition: var(--transicao-padrao);
 }
 
-.projeto_card:hover{
+.projeto_card:hover {
     transform: translateY(-.5rem);
 
     border-color: var(--cor-primaria);
 }
 
-.projeto_image{
+.projeto_image {
     width: 100%;
     height: 22rem;
 
     overflow: hidden;
 }
 
-.projeto_image img{
+.projeto_image img {
     width: 100%;
     height: 100%;
 
@@ -691,7 +691,7 @@ nav a:focus-visible{
     object-position: center;
 }
 
-.projeto_content{
+.projeto_content {
     padding: 2rem;
 
     display: flex;
@@ -699,13 +699,13 @@ nav a:focus-visible{
     flex: 1;
 }
 
-.projeto_content h3{
+.projeto_content h3 {
     margin-bottom: 1rem;
 
     font-size: 2rem;
 }
 
-.projeto_content p{
+.projeto_content p {
     margin-bottom: 1.8rem;
 
     color: var(--cor-texto-secundario);
@@ -714,7 +714,7 @@ nav a:focus-visible{
     line-height: 1.6;
 }
 
-.projeto_tecnologias{
+.projeto_tecnologias {
     display: flex;
     flex-wrap: wrap;
 
@@ -723,7 +723,7 @@ nav a:focus-visible{
     margin-bottom: 2rem;
 }
 
-.projeto_tecnologias span{
+.projeto_tecnologias span {
     padding: .6rem 1rem;
 
     background-color: var(--cor-fundo);
@@ -736,7 +736,7 @@ nav a:focus-visible{
     font-weight: 500;
 }
 
-.projeto_links{
+.projeto_links {
     display: flex;
     align-items: center;
 
@@ -745,7 +745,7 @@ nav a:focus-visible{
     margin-top: auto;
 }
 
-.projeto_links a{
+.projeto_links a {
     display: inline-flex;
     align-items: center;
 
@@ -763,23 +763,23 @@ nav a:focus-visible{
     transition: var(--transicao-padrao);
 }
 
-.projeto_links a:first-child{
+.projeto_links a:first-child {
     background-color: var(--cor-primaria);
 }
 
-.projeto_links a:first-child:hover{
+.projeto_links a:first-child:hover {
     background-color: var(--cor-primaria-hover);
 
     transform: translateY(-.2rem);
 }
 
-.projeto_links a:last-child{
+.projeto_links a:last-child {
     border: .1rem solid var(--cor-borda);
 
     color: var(--cor-texto-secundario);
 }
 
-.projeto_links a:last-child:hover{
+.projeto_links a:last-child:hover {
     border-color: var(--cor-primaria);
 
     color: var(--cor-texto);
@@ -789,17 +789,17 @@ nav a:focus-visible{
                 20 - JORNADA
 ==================================================*/
 
-#jornada{
+#jornada {
     padding: 10rem 0;
 }
 
-.jornada_content{
+.jornada_content {
     max-width: 90rem;
 
     margin: 0 auto;
 }
 
-.jornada_item{
+.jornada_item {
     display: grid;
 
     grid-template-columns: 8rem 1fr;
@@ -811,7 +811,7 @@ nav a:focus-visible{
     padding-bottom: 5rem;
 }
 
-.jornada_numero{
+.jornada_numero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -833,7 +833,7 @@ nav a:focus-visible{
     z-index: 2;
 }
 
-.jornada_info span{
+.jornada_info span {
     display: inline-block;
 
     margin-bottom: .8rem;
@@ -846,14 +846,14 @@ nav a:focus-visible{
     letter-spacing: .1rem;
 }
 
-.jornada_info h3{
+.jornada_info h3 {
     margin-bottom: 1rem;
 
     font-size: 2.4rem;
     font-weight: 700;
 }
 
-.jornada_info p{
+.jornada_info p {
     max-width: 70rem;
 
     color: var(--cor-texto-secundario);
@@ -862,7 +862,7 @@ nav a:focus-visible{
     line-height: 1.7;
 }
 
-.jornada_item::after{
+.jornada_item::after {
     content: "";
 
     position: absolute;
@@ -878,7 +878,7 @@ nav a:focus-visible{
     z-index: 1;
 }
 
-.jornada_item:last-child::after{
+.jornada_item:last-child::after {
     display: none;
 }
 
@@ -886,11 +886,11 @@ nav a:focus-visible{
                 21 - CONTATO
 ==================================================*/
 
-#contato{
+#contato {
     padding: 10rem 0;
 }
 
-.contato_content{
+.contato_content {
     display: grid;
 
     grid-template-columns: .8fr 1.2fr;
@@ -900,14 +900,14 @@ nav a:focus-visible{
     align-items: start;
 }
 
-.contato_info h3{
+.contato_info h3 {
     margin-bottom: 1.6rem;
 
     font-size: 2.8rem;
     font-weight: 700;
 }
 
-.contato_info p{
+.contato_info p {
     max-width: 45rem;
 
     color: var(--cor-texto-secundario);
@@ -916,7 +916,7 @@ nav a:focus-visible{
     line-height: 1.8;
 }
 
-.contato_form form{
+.contato_form form {
     width: 100%;
 
     padding: 3rem;
@@ -927,7 +927,7 @@ nav a:focus-visible{
     border-radius: 1.6rem;
 }
 
-.form_group{
+.form_group {
     display: flex;
     flex-direction: column;
 
@@ -936,13 +936,13 @@ nav a:focus-visible{
     margin-bottom: 2rem;
 }
 
-.form_group label{
+.form_group label {
     font-size: 1.5rem;
     font-weight: 600;
 }
 
 .form_group input,
-.form_group textarea{
+.form_group textarea {
     width: 100%;
 
     padding: 1.4rem 1.6rem;
@@ -963,29 +963,29 @@ nav a:focus-visible{
 }
 
 .form_group input:focus,
-.form_group textarea:focus{
+.form_group textarea:focus {
     border-color: var(--cor-primaria);
 
     box-shadow: 0 0 0 .2rem var(--cor-primaria-brilho);
 }
 
 .form_group input::placeholder,
-.form_group textarea::placeholder{
+.form_group textarea::placeholder {
     color: var(--cor-texto-secundario);
     opacity: .7;
 }
 
-.form_group textarea{
+.form_group textarea {
     min-height: 16rem;
 
     resize: vertical;
 }
 
-.contato_form .btn{
+.contato_form .btn {
     margin-top: .5rem;
 }
 
-.form_mensagem{
+.form_mensagem {
     margin-top: 1.5rem;
 
     color: var(--cor-primaria);
@@ -1000,7 +1000,7 @@ nav a:focus-visible{
                 22 - FOOTER
 ==================================================*/
 
-footer{
+footer {
     padding: 5rem 0 2rem;
 
     background-color: var(--cor-superficie);
@@ -1008,7 +1008,7 @@ footer{
     border-top: .1rem solid var(--cor-borda);
 }
 
-.footer_content{
+.footer_content {
     display: flex;
 
     justify-content: space-between;
@@ -1019,11 +1019,11 @@ footer{
     padding-bottom: 4rem;
 }
 
-.footer_info{
+.footer_info {
     max-width: 45rem;
 }
 
-.footer_logo{
+.footer_logo {
     display: inline-block;
 
     margin-bottom: 1rem;
@@ -1037,24 +1037,24 @@ footer{
     transition: var(--transicao-padrao);
 }
 
-.footer_logo:hover{
+.footer_logo:hover {
     color: var(--cor-texto);
 }
 
-.footer_info p{
+.footer_info p {
     color: var(--cor-texto-secundario);
 
     font-size: 1.5rem;
     line-height: 1.7;
 }
 
-.footer_social{
+.footer_social {
     display: flex;
 
     gap: 1.2rem;
 }
 
-.footer_social a{
+.footer_social a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1072,7 +1072,7 @@ footer{
     transition: var(--transicao-padrao);
 }
 
-.footer_social a:hover{
+.footer_social a:hover {
     color: var(--cor-texto);
 
     border-color: var(--cor-primaria);
@@ -1082,7 +1082,7 @@ footer{
     transform: translateY(-.3rem);
 }
 
-.footer_bottom{
+.footer_bottom {
     padding-top: 2rem;
 
     border-top: .1rem solid var(--cor-borda);
@@ -1090,7 +1090,7 @@ footer{
     text-align: center;
 }
 
-.footer_bottom p{
+.footer_bottom p {
     color: var(--cor-texto-secundario);
 
     font-size: 1.4rem;
@@ -1100,52 +1100,52 @@ footer{
                 99 - RESPONSIVIDADE 
 ==================================================*/
 
- /*--------------- 99.1 - TABLET ---------------*/
+/*--------------- 99.1 - TABLET ---------------*/
 
- @media (max-width: 768px){
+@media (max-width: 768px) {
 
-    #hero{
+    #hero {
         padding-top: 10rem;
         padding-bottom: 6rem;
     }
 
-    #hero .container{
+    #hero .container {
         flex-direction: column;
         text-align: center;
         gap: 5rem;
     }
 
-    .hero_content{
+    .hero_content {
         max-width: 100%;
     }
 
-    .hero_badge{
+    .hero_badge {
         justify-content: center;
     }
 
-    .hero_content h1{
+    .hero_content h1 {
         font-size: 4.2rem;
     }
 
-    .hero_content h2{
+    .hero_content h2 {
         font-size: 2.4rem;
     }
 
-    .hero_content p{
+    .hero_content p {
         font-size: 1.6rem;
         margin: 0 auto;
     }
 
-    .hero_buttons{
+    .hero_buttons {
         justify-content: center;
         flex-wrap: wrap;
     }
 
-    .hero_image img{
+    .hero_image img {
         max-width: 32rem;
     }
 
-    nav{
+    nav {
         position: absolute;
 
         top: 100%;
@@ -1169,210 +1169,221 @@ footer{
         transition: var(--transicao-padrao);
     }
 
-    nav.active{
+    nav.active {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
     }
 
-    .menu_toggle{
+    .menu_toggle {
         display: flex;
     }
 
-    .logo{
+    .logo {
         font-size: 2.2rem;
     }
 
-    header{
+    header {
         padding: 1.5rem 0;
     }
 
-    #sobre{
+    #sobre {
         padding: 8rem 0 6rem;
     }
 
-    .section_header{
+    .section_header {
         margin-bottom: 4rem;
     }
 
-    .section_header h2{
+    .section_header h2 {
         font-size: 3.2rem;
     }
 
-    .section_header p{
+    .section_header p {
         font-size: 1.6rem;
     }
 
-    .sobre_content{
+    .sobre_content {
         grid-template-columns: 1fr;
 
         gap: 5rem;
     }
 
-    .sobre_texto{
+    .sobre_texto {
         text-align: center;
     }
 
-    .sobre_texto h3{
+    .sobre_texto h3 {
         font-size: 2.4rem;
     }
 
-    .sobre_texto p{
+    .sobre_texto p {
         font-size: 1.6rem;
     }
 
-    .sobre_destaques{
+    .sobre_destaques {
         width: 100%;
     }
 
-    #tecnologias{
+    #tecnologias {
         padding: 8rem 0 6rem;
     }
 
-    .tecnologias_grid{
+    .tecnologias_grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #projetos{
+    #projetos {
         padding: 8rem 0 6rem;
     }
 
-    .projetos_grid{
+    .projetos_grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #jornada{
+    #jornada {
         padding: 8rem 0 6rem;
     }
 
-    .jornada_content{
+    .jornada_content {
         max-width: 100%;
     }
 
-    .jornada_item{
+    .jornada_item {
         grid-template-columns: 7rem 1fr;
 
         gap: 2rem;
     }
 
-    .jornada_info h3{
+    .jornada_info h3 {
         font-size: 2.2rem;
     }
 
-    .jornada_info p{
+    .jornada_info p {
         font-size: 1.6rem;
     }
 
-    #contato{
+    #contato {
         padding: 8rem 0 6rem;
     }
 
-    .contato_content{
+    .contato_content {
         grid-template-columns: 1fr;
 
         gap: 5rem;
     }
 
-    .contato_info{
+    .contato_info {
         text-align: center;
     }
 
-    .contato_info p{
+    .contato_info p {
         margin: 0 auto;
     }
 
-    .footer_content{
+    .footer_content {
         flex-direction: column;
 
         text-align: center;
     }
 
-    .footer_info{
+    .footer_info {
         max-width: 50rem;
     }
 
-    .footer_social{
+    .footer_social {
         justify-content: center;
     }
- }
+}
 
- /*--------------- 99.2 - MOBILE ---------------*/
+/*--------------- 99.2 - MOBILE ---------------*/
 
- @media (max-width: 480px){
+@media (max-width: 480px) {
 
-    .hero_content h1{
+    .hero_content h1 {
         font-size: 3.6rem;
     }
 
-    .hero_buttons{
+    .hero_buttons {
         flex-direction: column;
     }
 
-    .btn{
+    .btn {
         width: 100%;
     }
 
-    .hero_image img{
+    .hero_image img {
         max-width: 26rem;
     }
 
-    #sobre{
+    #sobre {
         padding: 7rem 0 5rem;
     }
 
-    .section_header{
+    .section_header {
         margin-bottom: 3.5rem;
     }
 
-    .section_header h2{
+    .section_header h2 {
         font-size: 2.8rem;
     }
 
-    .section_header p{
+    .section_header p {
         font-size: 1.5rem;
     }
 
-    .sobre_texto h3{
+    .sobre_texto h3 {
         font-size: 2.2rem;
     }
 
-    .sobre_texto p{
+    .sobre_texto p {
         font-size: 1.5rem;
     }
 
-    .destaque{
+    .destaque {
         padding: 2rem;
     }
 
-    .destaque strong{
+    .destaque strong {
         font-size: 1.7rem;
     }
 
-    .destaque span{
+    .destaque span {
         font-size: 1.4rem;
     }
 
-    #tecnologias{
+    #tecnologias {
         padding: 7rem 0 5rem;
     }
 
-    .tecnologias_grid{
+    .tecnologias_grid {
         grid-template-columns: 1fr;
     }
 
-    #projetos{
+    #projetos {
         padding: 7rem 0 5rem;
     }
 
-    .projetos_grid{
+    .projetos_grid {
         grid-template-columns: 1fr;
     }
 
-    #jornada{
+    .projeto_image {
+        height: auto;
+    }
+
+    .projeto_image img {
+        width: 100%;
+        height: auto;
+        object-fit: initial;
+        display: block;
+    }
+
+    #jornada {
         padding: 7rem 0 5rem;
     }
 
-    .jornada_item{
+    .jornada_item {
         grid-template-columns: 6rem 1fr;
 
         gap: 1.5rem;
@@ -1380,86 +1391,86 @@ footer{
         padding-bottom: 4rem;
     }
 
-    .jornada_numero{
+    .jornada_numero {
         width: 5rem;
         height: 5rem;
 
         font-size: 1.4rem;
     }
 
-    .jornada_item::after{
+    .jornada_item::after {
         top: 5rem;
         left: 2.5rem;
 
         height: calc(100% - 5rem);
     }
 
-    .jornada_info span{
+    .jornada_info span {
         font-size: 1.3rem;
     }
 
-    .jornada_info h3{
+    .jornada_info h3 {
         font-size: 1.9rem;
     }
 
-    .jornada_info p{
+    .jornada_info p {
         font-size: 1.5rem;
     }
 
-    #contato{
+    #contato {
         padding: 7rem 0 5rem;
     }
 
-    .contato_content{
+    .contato_content {
         gap: 4rem;
     }
 
-    .contato_info h3{
+    .contato_info h3 {
         font-size: 2.4rem;
     }
 
-    .contato_info p{
+    .contato_info p {
         font-size: 1.5rem;
     }
 
-    .contato_form form{
+    .contato_form form {
         padding: 2rem;
     }
 
-    .form_group{
+    .form_group {
         margin-bottom: 1.8rem;
     }
 
     .form_group input,
-    .form_group textarea{
+    .form_group textarea {
         padding: 1.3rem 1.4rem;
 
         font-size: 1.5rem;
     }
 
-    .contato_form .btn{
+    .contato_form .btn {
         width: 100%;
     }
 
-    footer{
+    footer {
         padding: 4rem 0 2rem;
     }
 
-    .footer_content{
+    .footer_content {
         gap: 3rem;
 
         padding-bottom: 3rem;
     }
 
-    .footer_logo{
+    .footer_logo {
         font-size: 2.2rem;
     }
 
-    .footer_info p{
+    .footer_info p {
         font-size: 1.4rem;
     }
 
-    .footer_bottom p{
+    .footer_bottom p {
         font-size: 1.3rem;
     }
- }
+}
