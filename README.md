@@ -32,7 +32,7 @@ Este portfólio foi desenvolvido para apresentar minha trajetória como desenvol
 
 ## 🌐 Acesse o projeto
 
-[Visitar portfólio](https://amandalima-a.github.io/Portfolio/)
+[Visitar portfólio](https://amandalima-a.github.io/portfolio/)
 
 ## 👩‍💻 Autora
 
